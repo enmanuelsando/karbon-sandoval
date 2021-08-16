@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Titulo-->
+    <title>Contacto Karbon BBQ</title>
+    <!--keywords-->
+    <meta name="keywords" content="asado, parrilla, diseño, carne, catering">
+    <!--descripcion-->
+    <meta name="description" content="No dudes en contactarnos para aclarar cualquier 
+    duda o cualquier solicitud especifica, estamos aqui para ayudarte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="container">
+        <img src="../imagenes/LogoKarbonNegro.png" class="logo1" alt="logo sin fondo negro">
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a class="active" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1 class="titulo">Formulario de contacto</h1>
+        <form action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <input type="text" name="nombre" placeholder="Nombre"><br>
+                <input type="text" name="apellido" placeholder="Apellido"><br>
+                <input type="tel" name="telefono" placeholder="Telefono"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <select name="genero">
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select><br>
+                <label for="interes">Servicio de interes:</label>
+                <div>Catering</div>
+                <input type="radio" name="conjunto" value="catering">
+                <div>Diseño</div>
+                <input type="radio" name="conjunto" value="diseno">
+                <div>Otro</div>
+                <input type="radio" name="conjunto" value="otro"><br>
+                <label for="desea">Desea recibir ofertas de nuestros productos?</label>
+                <input type="checkbox" name="desea" value="1"><br>
+                <textarea name="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea><br>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar formulario">
+            </fieldset>
+        </form>
+    </section>
+        <footer>
+            <img src="../imagenes/LogoKarbonAmarillo.png" class="logo1" alt="logo sin fondo negro">
+            <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+</body>
+
+</html>

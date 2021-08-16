@@ -1,0 +1,18 @@
+// extends
+
+@import "../layout/grid";
+
+/*caja con img2*/
+.cajaimg2 {
+    @extend .cajaimg1;
+    background-image: url(../imagenes/KRBN-BODA11.jpeg);
+    text-align: center;
+}
+
+.productlist {
+    @extend .cajabody__element--productos;
+
+    li {
+        max-width: 300px;
+    }
+}

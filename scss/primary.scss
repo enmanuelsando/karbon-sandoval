@@ -1,0 +1,29 @@
+//boostrap
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+// importacion de componentes
+
+@import "components/buttons";
+
+//importacion de layouts
+
+@import "layout/main";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+
+// importacion de utilities
+
+@import "utilities/variables";
+@import "utilities/extends";
+@import "utilities/function";
+@import "utilities/maps";
+@import "utilities/mixin";
+@import "utilities/responsive";

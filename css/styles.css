@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.button {
+  background-color: #FF960D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border: 1px solid black;
+  border-radius: 2px; }
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+button a {
+  text-decoration: none;
+  color: white; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: roboto, Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #fff9e1; }
+
+ul li {
+  list-style: none; }
+
+h2 {
+  text-align: center; }
+
+h1 {
+  text-align: center;
+  font-style: bold 2.1rem "open sans", sans-serif;
+  text-shadow: 1px 1px 2px black;
+  margin: 15px; }
+
+fieldset {
+  margin: 30px 30px;
+  padding: 15px 20px; }
+
+footer {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer img {
+    padding: 15px;
+    width: 200px; }
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white; }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white; }
+
+.fa-instagram {
+  background: #975600;
+  color: white; }
+
+/*Creando grids*/
+.cajabody {
+  display: grid;
+  grid-template-rows: 2fr 3fr 2fr 3fr 2fr;
+  height: 100vh; }
+
+.cajabody__element {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  padding: 5px; }
+
+.cajabody__element--item {
+  padding: 20px;
+  text-align: center; }
+
+.cajabody__element--productos, .productlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .cajabody__element--productos li, .productlist li {
+    transition: transform .5s;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: .80;
+    max-width: 250px;
+    text-align: justify;
+    border: 1px solid black;
+    padding: 20px; }
+  .cajabody__element--productos li:hover, .productlist li:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+    opacity: 1; }
+
+.cajaimg1, .cajaimg2 {
+  background-image: url(../imagenes/KRBN-BODA36.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cajaimg1 p, .cajaimg2 p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px black; }
+
+.cajabody__element--nosotros {
+  display: block;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1em;
+  margin: 20px 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); }
+
+#titulo {
+  grid-area: titulo;
+  text-align: center; }
+
+#parrafo {
+  grid-area: parrafo;
+  text-align: justify; }
+
+#boton {
+  grid-area: boton;
+  text-align: center; }
+
+#video {
+  grid-area: video; }
+
+.gridareaservicios {
+  align-items: center;
+  text-align: justify;
+  grid-gap: 1em;
+  margin: 20px 40px;
+  padding: 20px; }
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  .flexContainer iframe {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px; }
+
+.flexContainerLeft {
+  display: flex;
+  background-color: #FFFF0D;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1020px;
+  margin: 40px;
+  padding: 40px;
+  border: 0.5px solid #000000;
+  border-radius: 5px; }
+
+.flexContainerRight {
+  display: flex;
+  background-color: #FFFF0D;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1020px;
+  margin: 40px;
+  padding: 40px;
+  border: 0.5px solid #000000;
+  border-radius: 5px; }
+
+.flexContainerImg {
+  max-width: 250px;
+  min-width: 120px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px; }
+
+.flexContainerp {
+  max-width: 380px;
+  flex-grow: 3;
+  align-items: center;
+  justify-content: flex-end; }
+
+header {
+  background: #f5df2e;
+  background: linear-gradient(315deg, #f5df2e 0%, #f07654 74%); }
+  header img {
+    padding: 15px; }
+  header ul li {
+    list-style-type: none;
+    text-align: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.281); }
+    header ul li a {
+      display: block;
+      width: 100%;
+      background-color: #fff9e1;
+      padding: 5px;
+      color: #000000;
+      text-decoration: none; }
+  header ul li a:hover:not(.active) {
+    background-color: #8d897a;
+    color: white; }
+
+.active {
+  background-color: #E8B600;
+  color: white; }
+
+/*Creando grids*/
+.cajabody {
+  display: grid;
+  grid-template-rows: 2fr 3fr 2fr 3fr 2fr;
+  height: 100vh; }
+
+.cajabody__element {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  padding: 5px; }
+
+.cajabody__element--item {
+  padding: 20px;
+  text-align: center; }
+
+.cajabody__element--productos, .productlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .cajabody__element--productos li, .productlist li {
+    transition: transform .5s;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: .80;
+    max-width: 250px;
+    text-align: justify;
+    border: 1px solid black;
+    padding: 20px; }
+  .cajabody__element--productos li:hover, .productlist li:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+    opacity: 1; }
+
+.cajaimg1, .cajaimg2 {
+  background-image: url(../imagenes/KRBN-BODA36.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cajaimg1 p, .cajaimg2 p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px black; }
+
+.cajabody__element--nosotros {
+  display: block;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1em;
+  margin: 20px 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); }
+
+#titulo {
+  grid-area: titulo;
+  text-align: center; }
+
+#parrafo {
+  grid-area: parrafo;
+  text-align: justify; }
+
+#boton {
+  grid-area: boton;
+  text-align: center; }
+
+#video {
+  grid-area: video; }
+
+.gridareaservicios {
+  align-items: center;
+  text-align: justify;
+  grid-gap: 1em;
+  margin: 20px 40px;
+  padding: 20px; }
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  .flexContainer iframe {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px; }
+
+.flexContainerLeft {
+  display: flex;
+  background-color: #FFFF0D;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1020px;
+  margin: 40px;
+  padding: 40px;
+  border: 0.5px solid #000000;
+  border-radius: 5px; }
+
+.flexContainerRight {
+  display: flex;
+  background-color: #FFFF0D;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1020px;
+  margin: 40px;
+  padding: 40px;
+  border: 0.5px solid #000000;
+  border-radius: 5px; }
+
+.flexContainerImg {
+  max-width: 250px;
+  min-width: 120px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px; }
+
+.flexContainerp {
+  max-width: 380px;
+  flex-grow: 3;
+  align-items: center;
+  justify-content: flex-end; }
+
+/*caja con img2*/
+.cajaimg2 {
+  background-image: url(../imagenes/KRBN-BODA11.jpeg);
+  text-align: center; }
+
+.productlist li {
+  max-width: 300px; }
+
+h1 {
+  font-size: 2.1rem; }
+
+h2 {
+  font-size: 1.9rem; }
+
+h3 {
+  font-size: 1.7rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.3rem; }
+
+h6 {
+  font-size: 1.1rem; }
+
+/*Responsive*/
+/*Smartphone*/
+@media (max-width: 599px) {
+  video {
+    width: 350px; } }
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  header {
+    background-color: #d99058;
+    background-image: linear-gradient(315deg, #d99058 0%, #f8de7e 74%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    header img {
+      width: 320px; }
+    header ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 20px; }
+      header ul li a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        transition: .5s; }
+      header ul li a:hover {
+        text-shadow: 1px 1px 2px black; }
+  video {
+    max-width: 500px; }
+  .cajabody__element--nosotros {
+    display: grid;
+    grid-template-areas: 'titulo video' 'parrafo video' 'boton video';
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 1em;
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); } }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  header {
+    background-color: #d09700;
+    background-image: linear-gradient(90deg, #d09700 0%, #fff600 47%, #ffea00 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    header img {
+      width: 320px; }
+    header ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin: 30px; }
+      header ul li a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        transition: .5s; }
+      header ul li a:hover {
+        text-shadow: 1px 1px 2px black; }
+  .cajabody__element--nosotros {
+    display: grid;
+    grid-template-areas: 'titulo video' 'parrafo video' 'boton video';
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 1em;
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); }
+  .cajaimg1 p, .cajaimg2 p {
+    margin: 5rem;
+    padding: 8rem;
+    text-align: justify; }
+  video {
+    max-width: 700px; } }

@@ -1,0 +1,161 @@
+/*Creando grids*/
+
+@import "../utilities/variables";
+
+.cajabody {
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr 3fr 2fr;
+    height: 100vh;
+}
+
+.cajabody__element {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 5px;
+}
+
+.cajabody__element--item {
+    padding: 20px;
+    text-align: center;
+}
+
+.cajabody__element--productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+        transition: transform .5s;
+        background-color: white;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        opacity: .80;
+        max-width: 250px;
+        text-align: justify;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    li:hover {
+        -ms-transform: scale(1.2);
+        /* IE 9 */
+        -webkit-transform: scale(1.2);
+        /* Safari 3-8 */
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.cajaimg1 {
+    background-image: url(../imagenes/KRBN-BODA36.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        margin: 3rem;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+    }
+}
+
+.cajabody__element--nosotros {
+    display: block;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1em;
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+}
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+}
+
+#parrafo {
+    grid-area: parrafo;
+    text-align: justify;
+}
+
+#boton {
+    grid-area: boton;
+    text-align: center;
+}
+
+#video {
+    grid-area: video;
+}
+
+.gridareaservicios {
+    align-items: center;
+    text-align: justify;
+    grid-gap: 1em;
+    margin: 20px 40px;
+    padding: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    iframe {
+        margin: 20px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+.flexContainerLeft {
+    display: flex;
+    background-color: $color4;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1020px;
+    margin: 40px;
+    padding: 40px;
+    border: .5px solid $color5;
+    border-radius: 5px;
+}
+
+.flexContainerRight {
+    display: flex;
+    background-color: $color4;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1020px;
+    margin: 40px;
+    padding: 40px;
+    border: .5px solid $color5;
+    border-radius: 5px;
+}
+
+.flexContainerImg {
+    max-width: 250px;
+    min-width: 120px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.flexContainerp {
+    max-width: 380px;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: flex-end;
+}

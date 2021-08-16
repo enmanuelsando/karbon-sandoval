@@ -1,0 +1,35 @@
+@import "../utilities/variables";
+
+header {
+    background: $background-color-mobile;
+    background: $linear-gradient-mobile;
+
+    img {
+        padding: 15px;
+    }
+
+    ul li {
+        list-style-type: none;
+        text-align: center;
+        border: .5px solid rgba(0, 0, 0, 0.281);
+
+        a {
+            display: block;
+            width: 100%;
+            background-color: $color6;
+            padding: 5px;
+            color: $color5;
+            text-decoration: none;
+        }
+    }
+
+    ul li a:hover:not(.active) {
+        background-color: #8d897a;
+        color: white;
+    }
+}
+
+.active {
+    background-color: $color3;
+    color: white;
+}

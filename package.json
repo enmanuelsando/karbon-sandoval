@@ -1,0 +1,25 @@
+{
+  "name": "karbon-sandoval",
+  "version": "1.0.0",
+  "description": "sitio web de productos y servicios para la parrilla",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/primary.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enmanuelsando/karbon-sandoval.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enmanuelsando/karbon-sandoval/issues"
+  },
+  "homepage": "https://github.com/enmanuelsando/karbon-sandoval#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
