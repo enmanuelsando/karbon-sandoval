@@ -20,15 +20,16 @@
 <body class="cajabody">
     <header>
         <img src="../imagenes/LogoKarbonNegro.png" alt="logo sin fondo negro">
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a class="active" href="servicios.html">SERVICIOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopNav">
+            <a href="../index.html">home</a>
+            <a href="nosotros.html">nosotros</a>
+            <a href="productos.html">productos</a>
+            <a class="active" href="servicios.html">servicios</a>
+            <a href="contacto.html">contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <section class="gridareaservicios">
         <article>
@@ -74,6 +75,16 @@
             <a href="#" class="fa fa-instagram"></a>
         </div>
     </footer>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 </body>
 
 </html>
