@@ -21,6 +21,9 @@ ul li {
 
 h2 {
     text-align: center;
+    font-style: $title-font;
+    text-shadow: $letter-shadow;
+    color: white;
 }
 
 h1 {
@@ -33,4 +36,10 @@ h1 {
 fieldset {
     margin: 30px 30px;
     padding: 15px 20px;
+}
+
+#pText {
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
 }

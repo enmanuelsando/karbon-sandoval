@@ -7,6 +7,11 @@
     @extend .cajaimg1;
     background-image: url(../imagenes/KRBN-BODA11.jpeg);
     text-align: center;
+    align-items: center;
+
+    p {
+        margin: 1rem 1rem 1rem 1rem;
+    }
 }
 
 .productlist {
