@@ -8,6 +8,24 @@
     video {
         width: 350px;
     }
+
+    .image-stack {
+        display: none;
+    }
+
+    .flexContainerLeft {
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .flexContainerRight {
+        padding: 25px 25px 25px 25px;
+
+        p {
+            font-size: 1rem;
+        }
+    }
 }
 
 /* Tablet */
@@ -46,8 +64,25 @@
         background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
     }
 
+    .image-stack {
+        display: none;
+    }
 
+    .flexContainerRight {
+        padding: 25px 25px 25px 25px;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .flexContainerLeft {
+        p {
+            font-size: 1rem;
+        }
+    }
 }
+
 
 /* Desktop */
 @media (min-width: 1024px) {

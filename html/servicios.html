@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="cajabody">
+<body>
     <header>
         <img src="../imagenes/LogoKarbonNegro.png" alt="logo sin fondo negro">
         <div class="topnav" id="myTopNav">
@@ -32,38 +32,41 @@
         </div>
     </header>
     <section class="gridareaservicios">
-        <article>
-            <div>
-                <img src="../imagenes/KRBN-7.jpg" width="420" alt="Costillas asadas en diagonal">
-                <img src="../imagenes/KRBN-BODA15.jpeg" width="420" alt="Corte de carne siendo cortado">
-                <img src="../imagenes/KRBN-14.jpg" width="420" alt="Costillas asadas en plato preparado">
-                <h2 class="titulo">Catering</h2>
-                <P>
+        <article class="gridareaservicios__element">
+            <div id="imgs" class="image-stack">
+                <img class="image-stack__item—-top" src="../imagenes/KRBN-7.jpg" width="420"
+                    alt="Costillas asadas en diagonal">
+                <img class="image-stack__item—-middle" src="../imagenes/KRBN-BODA15.jpeg" width="420"
+                    alt="Corte de carne siendo cortado">
+                <img class="image-stack__item—-bottom" src="../imagenes/KRBN-14.jpg" width="420"
+                    alt="Costillas asadas en plato preparado">
+            </div>
+            <div class="gridareaservicios__element--box ">
+                <h2 id="tits">Catering</h2>
+                <P id="pars">
                     Contamos con el mejor servicio de catering a la parrilla para ese evento especial para ti y tus
                     seres queridos, tenemos la capacidad de trasladarnos con facilidad para brindarte el mejor servicio
                     en la locación de elijas. Solo ponte en contacto con nosotros y cuéntanos lo que deseas para tu
                     evento, nosotros nos encargamos de lo demás.
                 </P>
-            </div>
-            <div>
-                <video src="../videos/Karbon 3.mp4" width="500" preload="auto" autoplay controls></video>
+                <video id="vids" src="../videos/Karbon 3.mp4" width="620" preload="auto" autoplay controls></video>
             </div>
             <!--EN ESTA SECCION PARRAFO CON IMAGENES-->
         </article>
-        <article class="flexContainer1">
-            <div>
-                <h2 class="titulo">Diseño</h2>
-                <P>
+        <article class="gridareaservicios__elementcat">
+            <div class="gridareaservicios__element--box ">
+                <h2 id="tits2" class="titulo">Diseño</h2>
+                <P id="pars2">
                     También contamos con nuestra área de diseño, para crear o darle una nueva vida a ese espacio tan
                     especial donde se celebran esos momentos maravillosos junto a tus seres queridos. Podemos diseñar
                     desde esa parrilla soñada hasta el quincho entero, solo contáctanos y diseñemos juntos ese espacio
                     tan soñado. Garantizamos tu satisfacción.
                 </P>
-                <img src="../imagenes/quincho-ladrillos.jpg" width="420" alt="Quincho diseñado con ladrillos">
-                <img src="../imagenes/quincho-moderno.jpg" width="420" alt="Quincho diseñado moderno">
+                <video id="vids2" src="../videos/Karbon 1.mp4" width="620" preload="auto" autoplay controls></video>
             </div>
-            <div>
-                <video src="../videos/Karbon 1.mp4" width="500" preload="auto" autoplay controls></video>
+            <div id="imgs2" class="image-stack">
+                <img class="image-stack__item—-top"  src="../imagenes/quincho-ladrillos.jpg" width="420" alt="Quincho diseñado con ladrillos">
+                <img class="image-stack__item—-middle" src="../imagenes/quincho-moderno.jpg" width="420" alt="Quincho diseñado moderno">
             </div>
         </article>
     </section>
@@ -75,16 +78,16 @@
             <a href="#" class="fa fa-instagram"></a>
         </div>
     </footer>
-            <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
             }
-        </script>
+        }
+    </script>
 </body>
 
 </html>
